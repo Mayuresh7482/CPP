@@ -4,14 +4,14 @@
 
 #include <string>
 #include <vector>
-
+using namespace std;
 class MobilePhone {
 public:
     // Default constructor
     MobilePhone();
 
     // Parameterized constructor
-    MobilePhone(const std::string& modelNo, double price, const std::string& manufacturer, int quantity);
+    MobilePhone(const string& modelNo, double price, const string& manufacturer, int quantity);
 
     // Function to accept data input
     void acceptData();
@@ -20,12 +20,12 @@ public:
     void display() const;
 
     // Function to search mobile phone model availability
-    static bool searchModelAvailability(const std::vector<MobilePhone>& mobiles, const std::string& modelNo);
+    static bool searchModelAvailability(const vector<MobilePhone>& mobiles, const string& modelNo);
 
     // Data members
-    std::string ModelNo;
+    string ModelNo;
     double Price;
-    std::string Manufacturer;
+    string Manufacturer;
     int Quantity;
 };
 
